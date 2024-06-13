@@ -11,7 +11,7 @@ If you have any questions or need more information, please reach out to the cont
 - `README.md`: This file.
 
 ### Usage
-To get a sense of how the code works, you can explore the files in the `src/` directory.
+To get a sense of how the code works, you can explore the files in the `sdk/` directory.
 
 However, please remember that this is only a snapshot and does not represent the full functionality of the project.
 
