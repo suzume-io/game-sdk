@@ -7,7 +7,7 @@ This repository is a snapshot of a part of Suzume's codebase. The actual codebas
 If you have any questions or need more information, please reach out to the contact provided in the hackathon application.
 
 ## Contents
-- `src/`: Contains a subset of the source code files.
+- `sdk/`: Contains a subset of the source code files.
 - `README.md`: This file.
 
 ### Usage
