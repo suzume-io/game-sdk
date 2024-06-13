@@ -1,0 +1,124 @@
+@import "@app/styles/_variables.scss";
+
+.quest-item {
+  border: 2px solid $border_color_quest_item_1;
+  margin: 8px 0;
+
+  .quest-item-title {
+    padding: 0.3rem 1rem;
+    background-color: $bg_quest_item_title;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+
+    label {
+      font-size: 16px;
+      font-weight: 500;
+      color: $text_color_3;
+    }
+  }
+
+  .social-label {
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 6px;
+    padding: 5px 0;
+    color: #404040;
+    width: 100%;
+    background-color: rgb(241 245 249);
+  }
+
+  .quest-item-progress {
+    margin-top: 8px;
+    padding: 0rem 1rem;
+    position: relative;
+
+    progress {
+      height: 11px;
+      color: #1CB0F6;
+    }
+
+    .counter {
+      position: absolute;
+      top: 4px;
+      left: calc(50% - 3px);
+      font-size: 11px;
+      font-weight: 500;
+      color: #666666;
+    }
+  }
+
+  .quest-item-error {
+    margin: 0;
+    padding: 0rem 1rem;
+    text-align: right;
+    font-size: 0.8rem;
+    line-height: 0.7rem;
+    width: 100%;
+    span {
+      color: $text_color_5;
+    }
+  }
+
+  .quest-item-info-n-actions {
+    padding: 0.5rem 1rem;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1rem;
+
+    .info {
+      text-align: left;
+
+      span {
+        font-size: 11px;
+      }
+
+      img {
+        margin: 0 4px
+      }
+
+      .info-indicator {
+        // #1CB0F6
+        margin: 0 2px;
+
+        .icon-container {
+          background-color: #F0F8FF;
+          padding: 5px 1px;
+          border-radius: 2px;
+        }
+
+        .info-indicator-bottom {
+          bottom: 10px !important;
+          right: 8px;
+          span {
+            font-size: 8px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    .action {
+      text-align: right;
+
+      button {
+        background-color: #1CB0F6 !important;
+        color: #ffffff !important;
+        border: 2px solid #1896D1 !important;
+        box-shadow: 0px 2px 2px #1995D1 !important;
+        min-height: 26px !important;
+        height: 26px !important;
+      }
+
+      .disabled {
+        background-color: #D4D6DD !important;
+        color: #A8A7AD !important;
+        border: 0px solid !important;
+        box-shadow: 0px 2px 2px #8F9098 !important;
+      }
+    }
+  }
+}

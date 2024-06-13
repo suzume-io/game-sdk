@@ -1,0 +1,19 @@
+{
+  "questboard.title": "Suzume Quest",
+  "questboard.description": "Complete quests and earn rewards.\r\n Quests refresh every day",
+  "questboard.daily": "Daily",
+  "questboard.weekly": "Weekly",
+  "questboard.invites": "Invites",
+  "questboard.achivements": "Achivements",
+  "questboard.featuring": "Featuring",
+  "questboard.unlocked": "Unlocked",
+  "questboard.open": "Open",
+  "questboard.unlock": "Unlock",
+  "questboard.available": "Available",
+  "questboard.opened": "Opened",
+  "questboard.claim": "Claim",
+  "questboard.next_chest": "Next Chest",
+  "questboard.home": "HOME",
+  "questboard.statics": "STATICS",
+  "questboard.bag": "BAG"
+}

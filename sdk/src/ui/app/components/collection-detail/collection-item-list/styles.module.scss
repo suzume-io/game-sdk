@@ -1,0 +1,108 @@
+@import "@app/styles/_variables.scss";
+
+.scroll-view-container {
+    height: calc(100%);
+    overflow: auto;
+    flex-direction: column;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+.modal-bottom {
+  justify-content: center !important;
+  
+  button {
+    width: 80px;
+  }
+}
+  
+:global(#collectible-item-popup) {
+  :global(.modal-box) {
+    background-color: $bg_1;
+
+    .modal-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h3 {
+        font-size: 16px;
+        color: $text_color_3;
+      }
+
+      .cancel-btn {
+        display: inline-flex;
+        height: 3rem;
+        min-height: 3rem;
+        width: 130px;
+        flex-shrink: 0;
+        cursor: pointer;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        border: 1px solid #D4D6DD;
+        background-color: $bg_1;
+        // padding-left: 1rem;
+        // padding-right: 1rem;
+        text-align: center;
+        font-size: 14px;
+        color: #999999;
+        font-weight: 500;
+        box-shadow: 0px 1px 0px 0px #D4D6DD;
+      }
+
+      .okay-btn {
+        display: inline-flex;
+        height: 3rem;
+        min-height: 3rem;
+        width: 130px;
+        flex-shrink: 0;
+        cursor: pointer;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        border-bottom: 2px solid #1896D1;
+        background-color: $bg_4;
+        // padding-left: 1rem;
+        // padding-right: 1rem;
+        text-align: center;
+        font-size: 14px;
+        color: $text_color_2;
+        font-weight: 500;
+        box-shadow: 0px 1px 0px 0px #D4D6DD;
+      }
+
+      .item-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        height: 200px;
+        width: 200px;
+        overflow: hidden;
+        
+        .item {
+          margin: 0 8px;
+          padding: 10px;
+          background-color: #F0F8FF;
+          position: relative;
+          height: fit-content;
+
+          span {
+            position: absolute;
+            bottom: 3px;
+            right: 3px;
+            font-weight: 500;
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+}

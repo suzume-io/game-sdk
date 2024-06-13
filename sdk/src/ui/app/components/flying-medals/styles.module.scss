@@ -1,0 +1,29 @@
+.flying-medal {
+    background-color: red;
+    position: absolute;
+    transition: transform 0.4s ease-in 0.2s;
+
+    .child-medal {
+        position: absolute;
+        transform: scale(0.2);
+        transition: transform 0.2s;
+
+        .medal-1 {
+            position: relative;
+            left: 0px;
+            top: 0px;
+        }
+        .medal-2 {
+            position: relative;
+            left: 30px;
+            top: -10px;
+        }
+        .medal-3 {
+            position: relative;
+            left: 10px;
+            top: -15px;
+        }
+    }
+
+
+  }

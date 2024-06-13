@@ -1,0 +1,149 @@
+@import "../../styles/_variables.scss";
+
+.chest-btn {
+  height: 5.9rem !important;
+  width: 4.8rem !important;
+  padding: 2px !important;
+  margin: 0 2px;
+  background-color: $bg_1 !important;
+  border-width: 0px !important;
+  position: relative;
+  overflow: hidden;
+  
+  &.chest-btn-next {
+    box-shadow: none !important;
+    background-color: #EEEEEE !important;
+  }
+
+  &.chest-btn-unlocking {
+    background-color: $bg_5 !important;
+    box-shadow: 0px 2px 2px $shadow_color_chest_btn_3 !important;
+      &:after {
+        content: '';
+        position: absolute;
+        top: -50%;
+        right: -50%;
+        bottom: -50%;
+        left: -50%;
+        background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0));
+        transform: rotateZ(180deg) translate(0em, 7.5em);
+        animation: 3s chest-unlocking-animation 2s forwards infinite;
+    }
+  }
+
+  &.chest-btn-normal {
+    box-shadow: 0px 2px 2px $shadow_color_chest_btn_1 !important;
+    &:after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      bottom: -50%;
+      left: -50%;
+      background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0));
+      transform: rotateZ(45deg) translate(0em, 7.5em);
+      animation: 3s chest-open-animation 2s forwards infinite;
+  }
+  }
+
+  &.chest-btn-open {
+    background-color: $bg_2 !important;
+    box-shadow: 0px 2px 2px $shadow_color_chest_btn_2 !important;
+      &:after {
+        content: '';
+        position: absolute;
+        top: -50%;
+        right: -50%;
+        bottom: -50%;
+        left: -50%;
+        background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0));
+        transform: rotateZ(45deg) translate(0em, 7.5em);
+        animation: 3s chest-open-animation 2s forwards infinite;
+    }
+  }
+}
+
+@keyframes chest-open-animation {
+  100% {
+    transform: rotateZ(45deg) translate(1em, -9em);
+  }
+}
+
+@keyframes chest-unlocking-animation {
+  100% {
+    transform: rotateZ(180deg) translate(1em, -9em);
+  }
+}
+
+/* Tooltip text */
+.tooltiptext {
+  background-color: #1CB0F6;
+  color: #fff;
+  text-align: center;
+  padding: 2px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 999;
+
+  width: 60px;
+  bottom: 5px;
+
+  font-size: 12px;
+  line-height: 1.1rem;
+
+  span {
+    font-weight: 500;
+    color: #fff;
+  }
+
+  animation: 2s bouncy-tooltip 1s forwards infinite;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 26px;
+    border-width: 0 4px 8px;
+    border-style: solid;
+    border-color: #1CB0F6 transparent;
+    display: block;
+    width: 0;
+  }
+}
+
+@keyframes bouncy-tooltip {
+  50% {
+    transform: translate(0, 0.15em);
+  }
+  100% {
+    transform: translate(0, 0em);
+  }
+}
+
+@media (max-width: 370px) {
+  .chest-btn {
+    height: 4.8rem !important;
+    width: 3.8rem !important;
+
+    label {
+      font-size: 10px;
+      height: 10px
+    }
+
+    .footer-text { 
+      margin-top: 0;
+    }
+  }
+
+  .tooltiptext {
+    width: 50px;
+    bottom: 0px;
+    left: 5px;
+
+    &:after {
+      left: 21px;
+    }
+  }
+}

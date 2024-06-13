@@ -1,0 +1,58 @@
+{
+  "name": "suzume",
+  "private": true,
+  "version": "0.0.4",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5173",
+    "build": "gulp build",
+    "release": "gulp release",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "version": "release-it"
+  },
+  "dependencies": {
+    "@orbs-network/ton-access": "^2.3.3",
+    "@reactour/tour": "^3.6.2",
+    "@tma.js/init-data-node": "^1.2.6",
+    "@ton/ton": "^13.11.2",
+    "@tonconnect/ui-react": "^2.0.3",
+    "@twa-dev/sdk": "^7.0.0",
+    "@twa-dev/types": "^7.0.0",
+    "amazon-cognito-identity-js": "^6.3.12",
+    "autoprefixer": "^10.4.19",
+    "daisyui": "^4.11.1",
+    "postcss": "^8.4.38",
+    "react": "^18.2.0",
+    "react-circular-progressbar": "^2.1.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.23.1",
+    "reactour": "^1.19.4",
+    "tailwindcss": "^3.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "gulp": "^5.0.0",
+    "gulp-shell": "^0.8.0",
+    "mime": "^4.0.3",
+    "release-it": "^17.3.0",
+    "sass": "^1.77.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-plugin-dts": "^3.9.1",
+    "vite-plugin-node-polyfills": "^0.22.0"
+  },
+  "resolutions": {
+    "wrap-ansi": "7.0.0",
+    "string-width": "4.1.0",
+    "strip-ansi": "6.0.0"
+  }
+}
